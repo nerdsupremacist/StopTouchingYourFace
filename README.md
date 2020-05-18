@@ -2,7 +2,9 @@
 
 ![](demo.gif)
 
-SwiftUI App that alerts you when you have touched your face.
+During these strange times, it's important that we all remember that we shouldn't touuch our faces.
+
+Here's SwiftUI App that alerts you when you have touched your face.
 This happens to be an App version of my submission for the [WWDC20 Swift Student Challenge](https://developer.apple.com/wwdc20/swift-student-challenge/) 
 
 ## How does it work?
@@ -12,6 +14,10 @@ Well it uses a small (not great) CoreML Classification Model I created using Mic
 Sine my model isn't amazing, I make sure that there's actually a face in the image with Visions [VNDetectFaceRectanglesRequest](https://developer.apple.com/documentation/vision/vndetectfacerectanglesrequest).
 
 And the rest is just pretty SwiftUI code 😍
+
+## Why?
+
+Well like I said, this is a submission to the [WWDC20 Swift Student Challenge](https://developer.apple.com/wwdc20/swift-student-challenge/) so it's not obviously meant for production. This is just a proof of concept + an opportunity to try out some new things...
 
 ## Contributions
 Contributions are welcome and encouraged!
