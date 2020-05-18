@@ -5,7 +5,7 @@ SwiftUI App that alerts you when you have touched your face
 
 Well it uses a small (not great) CoreML Classification Model I created using Microsoft's [Custom Vision](https://www.customvision.ai). That classifies wether or not someone in the picture is touching their face.
 
-Sine my model isn't amazing, it make sure that there's actually a face in the image with Visions [VNDetectFaceRectanglesRequest](https://developer.apple.com/documentation/vision/vndetectfacerectanglesrequest).
+Sine my model isn't amazing, I make sure that there's actually a face in the image with Visions [VNDetectFaceRectanglesRequest](https://developer.apple.com/documentation/vision/vndetectfacerectanglesrequest).
 
 And the rest is just pretty SwiftUI code 😍
 
