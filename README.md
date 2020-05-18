@@ -1,5 +1,6 @@
 # StopTouchingYourFace
-SwiftUI App that alerts you when you have touched your face
+SwiftUI App that alerts you when you have touched your face.
+This happens to be an App version of my submission for the [WWDC20 Swift Student Challenge](https://developer.apple.com/wwdc20/swift-student-challenge/) 
 
 ## How does it work?
 
