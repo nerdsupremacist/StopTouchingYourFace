@@ -1,7 +1,5 @@
 # StopTouchingYourFace
 
-![](demo-ios.gif)
-
 | iOS        | macOS |
 | ------------- |-------------|
 | ![](https://github.com/nerdsupremacist/StopTouchingYourFace/blob/master/demo-ios.gif?raw=true)      | ![](https://github.com/nerdsupremacist/StopTouchingYourFace/blob/master/demo-mac.gif?raw=true) |
