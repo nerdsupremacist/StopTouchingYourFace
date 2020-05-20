@@ -1,6 +1,10 @@
 # StopTouchingYourFace
 
-![](demo.gif)
+![](demo-ios.gif)
+
+| iOS        | macOS |
+| ------------- |-------------|
+| ![](https://github.com/nerdsupremacist/StopTouchingYourFace/blob/master/demo-ios.gif?raw=true)      | ![](https://github.com/nerdsupremacist/StopTouchingYourFace/blob/master/demo-mac.gif?raw=true) |
 
 During these strange times, it's important that we all remember that we shouldn't touuch our faces.
 

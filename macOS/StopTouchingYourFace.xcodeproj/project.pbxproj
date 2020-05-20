@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		064E474524746192007EDE2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064E474424746192007EDE2D /* AppDelegate.swift */; };
+		064E474924746195007EDE2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 064E474824746195007EDE2D /* Assets.xcassets */; };
+		064E474C24746195007EDE2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 064E474B24746195007EDE2D /* Preview Assets.xcassets */; };
+		064E474F24746195007EDE2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 064E474D24746195007EDE2D /* Main.storyboard */; };
+		064E475C24746229007EDE2D /* FaceTouchDetection.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 064E475B24746229007EDE2D /* FaceTouchDetection.mlmodel */; };
+		064E475F24746233007EDE2D /* FaceTouchDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064E475E24746233007EDE2D /* FaceTouchDetector.swift */; };
+		064E476F247464DB007EDE2D /* StopTouchingYourFaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064E4761247464DB007EDE2D /* StopTouchingYourFaceViewModel.swift */; };
+		064E4770247464DB007EDE2D /* CountdownLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064E4764247464DB007EDE2D /* CountdownLabel.swift */; };
+		064E4771247464DB007EDE2D /* View+shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064E4765247464DB007EDE2D /* View+shake.swift */; };
+		064E4773247464DB007EDE2D /* BackgroundCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064E4767247464DB007EDE2D /* BackgroundCircle.swift */; };
+		064E4774247464DB007EDE2D /* QuoteTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064E4768247464DB007EDE2D /* QuoteTextView.swift */; };
+		064E4775247464DB007EDE2D /* StopTouchingYourFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064E476A247464DB007EDE2D /* StopTouchingYourFace.swift */; };
+		064E4776247464DB007EDE2D /* FaceTouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064E476C247464DB007EDE2D /* FaceTouchView.swift */; };
+		064E4777247464DB007EDE2D /* NoFacePresentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064E476D247464DB007EDE2D /* NoFacePresentView.swift */; };
+		064E4778247464DB007EDE2D /* UntouchedFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064E476E247464DB007EDE2D /* UntouchedFaceView.swift */; };
+		064E477A24746647007EDE2D /* AuthorizationRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064E477924746647007EDE2D /* AuthorizationRequestViewModel.swift */; };
+		064E477C2474679E007EDE2D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064E477B2474679E007EDE2D /* MainView.swift */; };
+		064E477E24747226007EDE2D /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064E477D24747226007EDE2D /* PopoverView.swift */; };
+		064E4780247495D9007EDE2D /* FaceTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064E477F247495D9007EDE2D /* FaceTouch.swift */; };
+		064E478224749789007EDE2D /* FaceTouchAggregationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064E478124749789007EDE2D /* FaceTouchAggregationService.swift */; };
+		064E47882474AE3D007EDE2D /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 064E47872474AE3D007EDE2D /* GRDB */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		064E474124746192007EDE2D /* StopTouchingYourFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StopTouchingYourFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		064E474424746192007EDE2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		064E474824746195007EDE2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		064E474B24746195007EDE2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		064E474E24746195007EDE2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		064E475024746195007EDE2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		064E475124746195007EDE2D /* StopTouchingYourFace.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StopTouchingYourFace.entitlements; sourceTree = "<group>"; };
+		064E475B24746229007EDE2D /* FaceTouchDetection.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FaceTouchDetection.mlmodel; sourceTree = "<group>"; };
+		064E475E24746233007EDE2D /* FaceTouchDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceTouchDetector.swift; sourceTree = "<group>"; };
+		064E4761247464DB007EDE2D /* StopTouchingYourFaceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopTouchingYourFaceViewModel.swift; sourceTree = "<group>"; };
+		064E4764247464DB007EDE2D /* CountdownLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownLabel.swift; sourceTree = "<group>"; };
+		064E4765247464DB007EDE2D /* View+shake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+shake.swift"; sourceTree = "<group>"; };
+		064E4767247464DB007EDE2D /* BackgroundCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundCircle.swift; sourceTree = "<group>"; };
+		064E4768247464DB007EDE2D /* QuoteTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteTextView.swift; sourceTree = "<group>"; };
+		064E476A247464DB007EDE2D /* StopTouchingYourFace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopTouchingYourFace.swift; sourceTree = "<group>"; };
+		064E476C247464DB007EDE2D /* FaceTouchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceTouchView.swift; sourceTree = "<group>"; };
+		064E476D247464DB007EDE2D /* NoFacePresentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoFacePresentView.swift; sourceTree = "<group>"; };
+		064E476E247464DB007EDE2D /* UntouchedFaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UntouchedFaceView.swift; sourceTree = "<group>"; };
+		064E477924746647007EDE2D /* AuthorizationRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationRequestViewModel.swift; sourceTree = "<group>"; };
+		064E477B2474679E007EDE2D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		064E477D24747226007EDE2D /* PopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
+		064E477F247495D9007EDE2D /* FaceTouch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTouch.swift; sourceTree = "<group>"; };
+		064E478124749789007EDE2D /* FaceTouchAggregationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTouchAggregationService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		064E473E24746192007EDE2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				064E47882474AE3D007EDE2D /* GRDB in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		064E473824746192007EDE2D = {
+			isa = PBXGroup;
+			children = (
+				064E474324746192007EDE2D /* StopTouchingYourFace */,
+				064E474224746192007EDE2D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		064E474224746192007EDE2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				064E474124746192007EDE2D /* StopTouchingYourFace.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		064E474324746192007EDE2D /* StopTouchingYourFace */ = {
+			isa = PBXGroup;
+			children = (
+				064E474424746192007EDE2D /* AppDelegate.swift */,
+				064E4760247464DB007EDE2D /* ViewModels */,
+				064E4762247464DB007EDE2D /* Views */,
+				064E475D24746233007EDE2D /* Services */,
+				064E475A24746229007EDE2D /* Models */,
+				064E474824746195007EDE2D /* Assets.xcassets */,
+				064E474D24746195007EDE2D /* Main.storyboard */,
+				064E475024746195007EDE2D /* Info.plist */,
+				064E475124746195007EDE2D /* StopTouchingYourFace.entitlements */,
+				064E474A24746195007EDE2D /* Preview Content */,
+			);
+			path = StopTouchingYourFace;
+			sourceTree = "<group>";
+		};
+		064E474A24746195007EDE2D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				064E474B24746195007EDE2D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		064E475A24746229007EDE2D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				064E475B24746229007EDE2D /* FaceTouchDetection.mlmodel */,
+				064E477F247495D9007EDE2D /* FaceTouch.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		064E475D24746233007EDE2D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				064E475E24746233007EDE2D /* FaceTouchDetector.swift */,
+				064E478124749789007EDE2D /* FaceTouchAggregationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		064E4760247464DB007EDE2D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				064E4761247464DB007EDE2D /* StopTouchingYourFaceViewModel.swift */,
+				064E477924746647007EDE2D /* AuthorizationRequestViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		064E4762247464DB007EDE2D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				064E4763247464DB007EDE2D /* Utilities */,
+				064E4769247464DB007EDE2D /* StopTouchingYourFace */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		064E4763247464DB007EDE2D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				064E4764247464DB007EDE2D /* CountdownLabel.swift */,
+				064E4765247464DB007EDE2D /* View+shake.swift */,
+				064E4767247464DB007EDE2D /* BackgroundCircle.swift */,
+				064E4768247464DB007EDE2D /* QuoteTextView.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		064E4769247464DB007EDE2D /* StopTouchingYourFace */ = {
+			isa = PBXGroup;
+			children = (
+				064E476A247464DB007EDE2D /* StopTouchingYourFace.swift */,
+				064E476B247464DB007EDE2D /* Cases */,
+				064E477B2474679E007EDE2D /* MainView.swift */,
+				064E477D24747226007EDE2D /* PopoverView.swift */,
+			);
+			path = StopTouchingYourFace;
+			sourceTree = "<group>";
+		};
+		064E476B247464DB007EDE2D /* Cases */ = {
+			isa = PBXGroup;
+			children = (
+				064E476C247464DB007EDE2D /* FaceTouchView.swift */,
+				064E476D247464DB007EDE2D /* NoFacePresentView.swift */,
+				064E476E247464DB007EDE2D /* UntouchedFaceView.swift */,
+			);
+			path = Cases;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		064E474024746192007EDE2D /* StopTouchingYourFace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 064E475424746195007EDE2D /* Build configuration list for PBXNativeTarget "StopTouchingYourFace" */;
+			buildPhases = (
+				064E473D24746192007EDE2D /* Sources */,
+				064E473E24746192007EDE2D /* Frameworks */,
+				064E473F24746192007EDE2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StopTouchingYourFace;
+			packageProductDependencies = (
+				064E47872474AE3D007EDE2D /* GRDB */,
+			);
+			productName = StopTouchingYourFace;
+			productReference = 064E474124746192007EDE2D /* StopTouchingYourFace.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		064E473924746192007EDE2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = Mathias.Quintero;
+				TargetAttributes = {
+					064E474024746192007EDE2D = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 064E473C24746192007EDE2D /* Build configuration list for PBXProject "StopTouchingYourFace" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 064E473824746192007EDE2D;
+			packageReferences = (
+				064E47862474AE3D007EDE2D /* XCRemoteSwiftPackageReference "GRDB.swift" */,
+			);
+			productRefGroup = 064E474224746192007EDE2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				064E474024746192007EDE2D /* StopTouchingYourFace */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		064E473F24746192007EDE2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				064E474F24746195007EDE2D /* Main.storyboard in Resources */,
+				064E474C24746195007EDE2D /* Preview Assets.xcassets in Resources */,
+				064E474924746195007EDE2D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		064E473D24746192007EDE2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				064E4775247464DB007EDE2D /* StopTouchingYourFace.swift in Sources */,
+				064E477E24747226007EDE2D /* PopoverView.swift in Sources */,
+				064E4771247464DB007EDE2D /* View+shake.swift in Sources */,
+				064E4778247464DB007EDE2D /* UntouchedFaceView.swift in Sources */,
+				064E474524746192007EDE2D /* AppDelegate.swift in Sources */,
+				064E4774247464DB007EDE2D /* QuoteTextView.swift in Sources */,
+				064E476F247464DB007EDE2D /* StopTouchingYourFaceViewModel.swift in Sources */,
+				064E4776247464DB007EDE2D /* FaceTouchView.swift in Sources */,
+				064E477A24746647007EDE2D /* AuthorizationRequestViewModel.swift in Sources */,
+				064E475F24746233007EDE2D /* FaceTouchDetector.swift in Sources */,
+				064E4770247464DB007EDE2D /* CountdownLabel.swift in Sources */,
+				064E4773247464DB007EDE2D /* BackgroundCircle.swift in Sources */,
+				064E478224749789007EDE2D /* FaceTouchAggregationService.swift in Sources */,
+				064E4777247464DB007EDE2D /* NoFacePresentView.swift in Sources */,
+				064E477C2474679E007EDE2D /* MainView.swift in Sources */,
+				064E475C24746229007EDE2D /* FaceTouchDetection.mlmodel in Sources */,
+				064E4780247495D9007EDE2D /* FaceTouch.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		064E474D24746195007EDE2D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				064E474E24746195007EDE2D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		064E475224746195007EDE2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		064E475324746195007EDE2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		064E475524746195007EDE2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StopTouchingYourFace/StopTouchingYourFace.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"StopTouchingYourFace/Preview Content\"";
+				DEVELOPMENT_TEAM = KJPP698PR3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = StopTouchingYourFace/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = io.quintero.StopTouchingYourFace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		064E475624746195007EDE2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StopTouchingYourFace/StopTouchingYourFace.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"StopTouchingYourFace/Preview Content\"";
+				DEVELOPMENT_TEAM = KJPP698PR3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = StopTouchingYourFace/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = io.quintero.StopTouchingYourFace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		064E473C24746192007EDE2D /* Build configuration list for PBXProject "StopTouchingYourFace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				064E475224746195007EDE2D /* Debug */,
+				064E475324746195007EDE2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		064E475424746195007EDE2D /* Build configuration list for PBXNativeTarget "StopTouchingYourFace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				064E475524746195007EDE2D /* Debug */,
+				064E475624746195007EDE2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		064E47862474AE3D007EDE2D /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		064E47872474AE3D007EDE2D /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 064E47862474AE3D007EDE2D /* XCRemoteSwiftPackageReference "GRDB.swift" */;
+			productName = GRDB;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 064E473924746192007EDE2D /* Project object */;
+}
