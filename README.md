@@ -11,7 +11,7 @@ This happens to be an App version of my submission for the [WWDC20 Swift Student
 
 ## How does it work?
 
-Well it uses a small (not great) CoreML Classification Model I created using Microsoft's [Custom Vision](https://www.customvision.ai). That classifies wether or not someone in the picture is touching their face.
+Well it uses a small (not great) CoreML Classification Model I created using Microsoft's [Custom Vision](https://www.customvision.ai). That classifies wether or not someone in the picture is touching their face. I say that it's not great, because I was lazy and only trained it with 200 images. 
 
 Sine my model isn't amazing, I make sure that there's actually a face in the image with Visions [VNDetectFaceRectanglesRequest](https://developer.apple.com/documentation/vision/vndetectfacerectanglesrequest).
 
